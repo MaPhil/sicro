@@ -1,8 +1,8 @@
-# simple-cron
+# SICRO
 
 ### usage on the console
 
-simple-cron -option 
+sicro -option 
 
 general options: 
 
@@ -22,7 +22,7 @@ functions:
 ### usage in a programm
 
 ```javascript
-var sc require('simple-cron');
+var sc require('sicro');
 sc.add('key','* * * * * echo "I am a test command" >> ~/Desktop/tmp3.txt').then(function(){
   //callback
 });

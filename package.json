@@ -1,17 +1,17 @@
 {
   "name": "sicro",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a simple node wrapper for the crontab",
   "main": "index.js",
   "bin":{
     "sicro":"node app.js"
   },
   "scripts": {
-    "test": "node list.js"
+    "test": "node test.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MaPhil/simple-cron.git"
+    "url": "git+https://github.com/MaPhil/sicro.git"
   },
   "keywords": [
     "cron",
@@ -20,9 +20,9 @@
   "author": "Philipp Mainz",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/MaPhil/simple-cron/issues"
+    "url": "https://github.com/MaPhil/sicro/issues"
   },
-  "homepage": "https://github.com/MaPhil/simple-cron#readme",
+  "homepage": "https://github.com/MaPhil/sicro#readme",
   "dependencies": {
     "cli-table": "^0.3.1",
     "minimist": "^1.2.0",

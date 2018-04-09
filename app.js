@@ -4,7 +4,7 @@
 var sc = require('./index.js');
 var pjson = require('./package.json');
 var argv = require('minimist')(process.argv.slice(2));
-var help = `simple-cron -option \n
+var help = `sicro -option \n
 general options: 
 \t-v --version
 \t-h --help

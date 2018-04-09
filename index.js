@@ -6,7 +6,7 @@ const { exec } = require('child_process');
 
 var Table = require('cli-table');
 var printtable = new Table({
-  head: ["SIMPLE-CRON ID", "Job"]
+  head: ["sicro ID", "Job"]
 });
 
 
