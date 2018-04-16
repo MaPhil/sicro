@@ -17,6 +17,8 @@ var regex = new RegExp(/\#\+\+\+\+start\-[\s\S]*\#\+\+\+\+end\-/mg);
 //low level to replace functionality  after testing
 var loWrite = function (data) {
   var q = _q.defer();
+  data = data.replace(/\'/g,"\\\'");
+  data = data.replace(/\"/g,'\\\"');
   exec(`echo "${data}" | crontab -`, (err, stdout, stderr) => {
     if (err) q.reject(err);
     if(stdout)q.resolve(stdout);
