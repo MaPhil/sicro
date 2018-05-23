@@ -52,7 +52,7 @@ var write = function (values) {
     if (!data || data === ''){
       data = startToken + enter + endToken;
     }else if (data.split(regex).length > 1) {
-      data =  data.replace(regex, startToken +enter+ endToken);
+      data =  data.replace(regex, startToken +enter+ endToken).trim();
     }else{
       data +='\n' + startToken + enter + endToken;
     }
